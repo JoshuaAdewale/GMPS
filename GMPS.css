@@ -242,15 +242,15 @@ h2
 .divimg
 {
   width: 100%;
-  height: a;
 }
 .cardb1
 {
-  background-image:url(/church/G.M.P.S/PICTURES/bola.jpg);
-  background-size: cover;
+  
+  /* background-image:url(../.M.P.S/PICTURES/bola.jpg); */
+  background-size: contain;
   background-repeat: no-repeat;
-  width: inherit;
-  height: inherit;
+  /* width: inherit;
+  height: inherit; */
 }
 
 .slip
