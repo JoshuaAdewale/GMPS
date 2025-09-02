@@ -376,7 +376,204 @@ footer
   color: #f3a530;
 }
 
-@media screen and (min-width:360px)
-{
-  
+/* Mobile First Responsive Design */
+
+/* Base styles for mobile (up to 768px) */
+@media screen and (max-width: 768px) {
+  .Header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .Menu ul {
+    flex-direction: column;
+    gap: 5px;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .Menu ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mainbox {
+    padding-top: 200px;
+  }
+
+  .maintext h1 {
+    font-size: 40px;
+  }
+
+  .maintext h2 {
+    font-size: 20px;
+  }
+
+  .CTA {
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    min-height: 250px;
+  }
+
+  .footcont {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .message form #name,
+  .message form #email {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .message form textarea {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .location ul li a {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .socials ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  footer {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .foot {
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .designedby {
+    margin-top: 10px;
+    display: block;
+  }
+}
+
+/* Tablet styles (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .Header {
+    gap: 50px;
+    padding: 0 20px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .Menu ul {
+    gap: 15px;
+  }
+
+  .Menu ul li .list {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .maintext h1 {
+    font-size: 60px;
+  }
+
+  .maintext h2 {
+    font-size: 25px;
+  }
+
+  .container {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .card {
+    width: 300px;
+    height: 280px;
+  }
+
+  .footcont {
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .message form #name,
+  .message form #email {
+    width: 300px;
+  }
+}
+
+/* Large desktop styles (1025px and up) */
+@media screen and (min-width: 1025px) {
+  .Header {
+    padding: 0 40px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footcont {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+}
+
+/* Additional responsive utilities */
+.Menu ul li .list {
+  transition: all 0.3s ease;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+
+.card {
+  transition: all 0.3s ease;
+}
+
+/* Ensure video background is responsive */
+.back {
+  object-fit: cover;
+  min-height: 100vh;
+}
+
+/* Make buttons more touch-friendly on mobile */
+@media screen and (max-width: 768px) {
+  .btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .Menu ul li .list {
+    padding: 12px 20px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
